@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To Do List</h1>
+            <button id="share-btn" title="공유 링크 복사">🔗 공유</button>
+        </header>
+        <section class="todo-input-section">
+            <input type="text" id="todo-input" placeholder="할 일을 입력하세요..." maxlength="100">
+            <input type="date" id="todo-date">
+            <button id="add-btn">추가</button>
+        </section>
+        <nav class="view-toggle">
+            <button id="list-view-btn" class="active">리스트 보기</button>
+            <button id="calendar-view-btn">달력 보기</button>
+        </nav>
+        <main>
+            <div id="list-view" class="view active"></div>
+            <div id="calendar-view" class="view"></div>
+        </main>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html> 
